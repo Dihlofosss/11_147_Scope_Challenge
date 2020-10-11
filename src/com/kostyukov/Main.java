@@ -1,8 +1,17 @@
 package com.kostyukov;
 
-public class Main {
+import java.util.Scanner;
 
-    public static void main(String[] args) {
-	// write your code here
-    }
+public class Main {
+	
+	public static Scanner scanner = new Scanner(System.in);
+	
+	public static void main(String[] args)
+	{
+		System.out.println("Please enter the number ");
+		X x = new X(scanner.nextInt());
+		scanner.nextLine();
+		
+		x.x();
+	}
 }
